@@ -51,7 +51,7 @@ print("|V|      " + "".join(f"{nom:>10}" for nom in test))
 print("octets   " + "".join(f"{fertilite(t, []):10.2f}" for t in test.values()))
 for taille in TAILLES:
     f = fusions[:taille - BASE_ET_MARQUEUR]     # les premières fusions suffisent, l'ordre est le même
-    print(f"{taille:<9}" + "".join(f"{fertilite(t, f):10.2f}" for t in test.values()))
+    print(f"{taille:<9}" + "".join(f"{fertilite(t, f):10.2f}" for t in test.values())) #voir les fertilites en fct de taille
 
 # --- Sauvegarde du tokeniseur retenu ---------------------------------------
 RETENU = 2000
